@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mini IMDB </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script
+            src="https://kit.fontawesome.com/136b87b371.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" type="text/css" href="./src/style.css">
+    </head>
+
+    <body>
+
+        <!-- Start of header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top start-0 end-0">
+                <div class="container">
+                  <a class="navbar-brand header-content" style="width:150px; text-align: center;" href="#">Mini IMDB</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="header-paddings header-content">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex header-paddings">
+                      <input class="form-control" id="search-area" type="search" placeholder="Search by title" aria-label="Search" style="width: 600px;">
+                      <span class="input-group-text" style="background-color: white;"><i class="fa fa-search search-ico pt-1" style="height: 30px;"></i></span>
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="header-paddings header-content">
+                          <a class="nav-link active" aria-current="page" href="./favourites.html">Favourites</a>
+                        </li>
+                        <li class="header-paddings header-content">
+                            <a class="nav-link active" aria-current="page" href="#">Login</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <!-- End of header -->
+
+        <main id="home-section">
+
+          <!-- The carousel movie items will be shown here  -->
+          <section class="main-section">
+            <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active movie-item" data-bs-interval="2000" data-id="tt0120611">
+                  <img width="300" height="500" src="https://m.media-amazon.com/images/M/MV5BOTk2NDNjZWQtMGY0Mi00YTY2LWE5MzctMGRhZmNlYzljYTg5XkEyXkFqcGdeQXVyMTAyNjg4NjE0._V1_SX300.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Blade</h5>
+                    <!-- <p>5 wins & 11 nominations</p> -->
+                    <p>IMDB Rating: 7.1</p>
+                  </div>
+                </div>
+                <div class="carousel-item movie-item" data-bs-interval="2000" data-id="tt0800369">
+                  <img width="300" height="500" src="https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Thor</h5>
+                    <!-- <p>5 wins & 30 nominations</p> -->
+                    <p>IMDB Rating: 7.0</p>
+                  </div>
+                </div>
+                <div class="carousel-item movie-item" data-bs-interval="2000" data-id="tt8946378">
+                  <img width="300" height="500" src="https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_SX300.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Knives Out</h5>
+                    <!-- <p>Nominated for 1 Oscar. 52 wins & 114 nominations total</p> -->
+                    <p>IMDB Rating: 7.9</p>
+                  </div>
+                </div>
+                <div class="carousel-item movie-item" data-bs-interval="2000" data-id="tt0415778">
+                  <img width="300" height="500" src="https://m.media-amazon.com/images/M/MV5BMTM0NzUwNjk5MF5BMl5BanBnXkFtZTcwOTk3NDM4NA@@._V1_SX300.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Endgame</h5>
+                    <!-- <p>5 wins & 30 nominations</p> -->
+                    <p>IMDB Rating: 7.5</p>
+                  </div>
+                </div>
+                <div class="carousel-item movie-item" data-bs-interval="2000" data-id="tt18351128">
+                  <img width="300" height="500" src="https://m.media-amazon.com/images/M/MV5BYzYzZDViNWYtNWViMS00NDMxLThlN2YtZjFkOWMwODkzNzhiXkEyXkFqcGdeQXVyMTUwMzM4NzU0._V1_SX300.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>The Amazing Spiderman 2</h5>
+                    <!-- <p>5 wins & 30 nominations</p> -->
+                    <p>IMDB Rating: 7.9</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+
+          <!-- The Features movies are shown in aside section -->
+          <section class="aside-section">
+            <h3>Featured</h3>
+            
+            <div class="card movie-item" style="width: 18rem;" data-id="tt0848228">
+              <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Avengers</h5>
+                <p class="card-text">Action, Sci-Fi</p>
+              </div>
+            </div>
+            <div class="card movie-item" style="width: 18rem;" data-id="tt0499549">
+              <img src="https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Avatar</h5>
+                <p class="card-text">Action, Adventure, Fantasy</p>
+              </div>
+            </div>
+            <div class="card movie-item" style="width: 18rem;" data-id="tt0409591">
+              <img src="https://m.media-amazon.com/images/M/MV5BMDI3ZDY4MDgtN2U2OS00Y2YzLWJmZmYtZWMzOTM3YWFjYmUyXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Naruto</h5>
+                <p class="card-text">Animation, Action, Adventure</p>
+              </div>
+            </div>
+            <div class="card movie-item" style="width: 18rem;" data-id="tt1405406">
+              <img src="https://m.media-amazon.com/images/M/MV5BMDk3YzgxNDQtNTEzOS00NDMyLWFlYmYtYTZlMDk1NDkxNmMyXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_SX300.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Vampire Diaries</h5>
+                <p class="card-text">Drama, Fantasy, Horror</p>
+              </div>
+            </div>
+            <div class="card movie-item" style="width: 18rem;" data-id="tt0422320">
+              <img src="https://m.media-amazon.com/images/M/MV5BOGI3MTQ5MDUtNGJhMi00NDY1LWE2MDItODRlMGNkMWVmY2MwXkEyXkFqcGdeQXVyNjQ1MDcxNzM@._V1_SX300.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ghilli</h5>
+                <p class="card-text">Action, Drama, Romance</p>
+              </div>
+            </div>
+            
+          </section>
+
+        </main>
+
+        <!-- The Dynamic search results are showing once the user starts typing -->
+        <div id="search-result-container">
+          <p id="search-header"></p>
+          <ul class="list-group" id="search-result">
+          </ul>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="./src/script.js"></script>
+    </body>
+</html>

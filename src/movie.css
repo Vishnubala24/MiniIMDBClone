@@ -1,0 +1,40 @@
+body{
+    background-image: radial-gradient(rgb(110, 107, 109) , #4f5353 ,#1a1819e8);
+}
+.header-content{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header-content:hover{
+    font-size: 1.2rem;
+    border-radius: 20%;
+    box-shadow: 0px 0px 6px 4px rgba(240, 233, 233, 0.3);
+}
+
+.header-paddings{
+    margin-left: 40px;
+}
+
+main{
+    position: static;
+    margin-top: 100px;
+}
+
+.card-container{
+    left: 40vh;
+    background-image: radial-gradient(grey, lightgrey);
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-title{
+    font-size: 1.4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(15, 14, 14);
+}
+
+img{
+    border-radius: 20px;
+}

@@ -1,0 +1,65 @@
+body{
+    background-image: radial-gradient(rgb(110, 107, 109) , #4f5353 ,#1a1819e8);
+}
+.header-content{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header-content:hover{
+    font-size: 1.2rem;
+    border-radius: 20%;
+    box-shadow: 0px 0px 6px 4px rgba(240, 233, 233, 0.3);
+}
+
+.header-paddings{
+    margin-left: 40px;
+}
+
+main{
+    position: static;
+    margin-top: 100px;
+}
+
+
+#fav-container{
+    position: static;
+    margin-top: 100px;
+    margin-left: 15vw;
+    padding-bottom: 20px;
+    width: 70vw;
+    background-image: radial-gradient(darkgrey, grey, lightgrey);
+    border-radius: 20px;
+}
+
+#search-header{
+    font-size: 1.8rem;
+    margin: 20px;
+    padding-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(48, 45, 45);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+#fav-items li{
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid rgb(121, 124, 124);
+    background-color: rgb(179, 245, 245);
+    border-radius: 20px;
+}
+
+#fav-items li:hover{
+    box-shadow: 0px 0px 6px 4px rgb(40, 43, 43);
+    transform: scale(1.04);
+    transition: 0.2s ease-in-out;
+}
+
+.fav-btn-rm{
+    float: right;
+}
